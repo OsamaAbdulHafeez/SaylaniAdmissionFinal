@@ -1,0 +1,79 @@
+.Wrapper{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    /* border: 1px solid gray; */
+}
+#outlined-basics{
+    width: 350px!important;
+    height: 20px!important;
+    /* margin: 2px 0!important; */
+    
+    
+}
+.main{
+    background-image: url('../assets/backgoundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.formclass{
+    background-image: url('./logo_saylaniwelfareusa.22bf709605809177256c-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-size: 300px;
+    background-origin: border-box;
+    display: flex;
+    margin-top: -80px;
+    box-shadow: 8px 14px 18px 4px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    height: 500px !important;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid rgb(207, 207, 207);
+   
+    
+}
+/* .button{
+    margin-top: 25px!important;
+} */
+.title{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+@media (max-width:560px) {
+    .formclass{
+        background-image: url('./logo_saylaniwelfareusa.22bf709605809177256c-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-position:top ;
+        background-size: 300px;
+        background-origin: border-box;
+        display: flex;
+        margin-top: -80px;
+        box-shadow: 8px 14px 18px 4px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        height: 500px !important;
+        width: 315px;
+        border: 1px solid rgb(207, 207, 207);  
+    }
+    #outlined-basics{
+        width: 280px!important;
+        height: 18px!important;
+        
+    }
+}
+.text{
+    margin-top: 20px;
+}

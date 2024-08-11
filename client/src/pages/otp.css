@@ -1,0 +1,40 @@
+.Wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid rgb(207, 207, 207);
+    width: 400px;
+    height: 500px;
+    margin: 0px auto;
+    padding-top: 50px;
+
+}
+#outlined-basis{
+    text-align: center;
+}
+.buttons{
+    background-color: blue!important;
+    margin-bottom: 0px!important;
+}
+img{
+    margin-left: 10px;
+}
+h4{
+    margin-top: 10px!important;
+}
+.buttons:hover{
+    background-color: rgb(47, 47, 219)!important;
+    
+}
+.form3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height: 250px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,7 @@
+.mainCourse{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+    z-index: -999;
+}
