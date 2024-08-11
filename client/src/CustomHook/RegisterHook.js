@@ -17,7 +17,7 @@ export const UseRegister=async(CNIC,name,email,password,setIsloding,dispatch,nav
         dispatch(registerStart())
         
         setIsloding(()=>true)
-        const postUser=await axios.post('https://admission-portal-backend.vercel.app/api/auth/register',{CNIC, email, password,name })
+        const postUser=await axios.post('http://localhost:5000/api/auth/register',{CNIC, email, password,name })
         if(postUser?.data.status){
             setIsloding(()=>false)
             toast.success(postUser.data.message)

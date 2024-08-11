@@ -13,7 +13,7 @@ const CourseDetails = () => {
         async function api(){
             try {
         
-                const res=await axios.get(`https://admission-portal-backend.vercel.app/api/course/getCourse/${id}`)
+                const res=await axios.get(`http://localhost:5000/api/course/getCourse/${id}`)
                 console.log(res.data.data)
                 setData(res?.data?.data)
               } catch (error) {

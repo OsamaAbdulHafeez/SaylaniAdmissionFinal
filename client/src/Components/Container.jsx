@@ -12,7 +12,7 @@ const Container = () => {
     async function api(){
       try {
         
-        const res=await axios.get('https://admission-portal-backend.vercel.app/api/course')
+        const res=await axios.get('http://localhost:5000/api/course')
         console.log(res.data)
         setData(()=>res?.data?.data)
       } catch (error) {

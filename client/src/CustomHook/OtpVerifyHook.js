@@ -14,7 +14,7 @@ try {
     dispatch(verifiedStarted)
     // setIsLoding(()=>true)
     
-    const otpPost=await axios.post('https://admission-portal-backend.vercel.app/api/auth/verifyemail',{otp},{headers:{token:`Bearer ${Token}`}})
+    const otpPost=await axios.post('http://localhost:5000/api/auth/verifyemail',{otp},{headers:{token:`Bearer ${Token}`}})
     
     
     // setIsLoding(()=>false)
@@ -39,7 +39,7 @@ const otpResendHook=async(email,setIsLoding)=>{
     console.log(email)
     try {
         setIsLoding(()=>true)
-        const resendOtp=await axios.post('https://admission-portal-backend.vercel.app/api/auth/resendOtp',{email})
+        const resendOtp=await axios.post('http://localhost:5000/api/auth/resendOtp',{email})
         toast.success(resendOtp?.data.message)
         setIsLoding(()=>false)
         
