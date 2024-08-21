@@ -24,7 +24,7 @@ app.use('/api/admission',admissionRoutes)
 app.use('/api/users',userRouter)
 
 app.use('/',(req,res)=>{
-    res.send("hello World")
+    res.send("Admission Portal")
 })
 
 
