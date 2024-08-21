@@ -7,7 +7,7 @@ const UseLoginHook =async (email,password,dispatch,setIsLoading,navigate) => {
     console.log(email,password)
     try {
         // setIsLoading(()=>true)
-        const loginPost=await axios.post('http://localhost:5000/api/auth/login',{email,password})
+        const loginPost=await axios.post('https://saylani-admission-final-backend.vercel.app/api/auth/login',{email,password})
         // setIsLoading(()=>false)
         console.log(loginPost)
         if(loginPost?.data?.status){

@@ -12,7 +12,7 @@ const Container = () => {
     async function api(){
       try {
         
-        const res=await axios.get('http://localhost:5000/api/course')
+        const res=await axios.get('https://saylani-admission-final-backend.vercel.app/api/course')
         console.log(res.data)
         setData(()=>res?.data?.data)
       } catch (error) {

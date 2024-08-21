@@ -27,7 +27,7 @@ function RegistrationForm() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`http://localhost:5000/api/admission/create`,formData)
+            const res = await axios.post(`https://saylani-admission-final-backend.vercel.app/api/admission/create`,formData)
             console.log(res.data.data)
             navigate('/')
         } catch (error) {
