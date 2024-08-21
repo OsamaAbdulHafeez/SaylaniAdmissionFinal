@@ -23,6 +23,12 @@ app.use('/api/city',cityRoutes)
 app.use('/api/admission',admissionRoutes)
 app.use('/api/users',userRouter)
 
+app.use('/',(req,res)=>{
+    res.send("hello World")
+})
+
+
+
 app.listen(process.env.PORT,()=>{
     console.log("Server is running on port")
 })
